@@ -44,9 +44,9 @@ const Review = (props) => {
         </div>
       </div>
       <h1 id="reviewTitle">{currentReview.summary}</h1>
-      <p id="reviewBody">
-        <h3>{currentReview.body}</h3>
-      </p>
+
+      <h3 id="reviewBody">{currentReview.body}</h3>
+
       <div id="helpfulAndReport">
         <span className="helpfull">
           <h5>

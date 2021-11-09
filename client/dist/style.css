@@ -5,6 +5,10 @@
   justify-content: space-evenly;
   padding: 5px;
   margin: 5px;
+  background-image: url('./nanas.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
   /* background-image: url("./img/y-so-serious.png"); */
 }
 
@@ -13,14 +17,14 @@
 }
 
 h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: "6rem";
   line-height: 1.167;
   letter-spacing: "-0.01562em"
 }
 h3 {
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: "3rem";
   line-height: 1.167;
@@ -35,12 +39,21 @@ letter-spacing: "0em";
 }
 
 #header {
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px -7px rgba(255,255,255,0.2),0px 24px 38px 3px rgba(255,255,255,0.14),0px 9px 46px 8px rgba(255,255,255,0.12);
   font-family: 'Roboto', sans-serif;
 }
+#header h1 {
+  color: gold;
+  font-weight: 400;
+  transition: 0.33s;
+}
+
 
 .productHeaderContainer {
   display: flex;
   align-items: center;
+  color:#767676;
 }
 
 .productHeaderWrapper {
@@ -49,14 +62,29 @@ letter-spacing: "0em";
 }
 
 .productChoiceHeader {
+  border-radius: 4px;
+  background: rgba(250, 250, 210, 0.03);
+  color: gold;
+  font-size: 32px;
   margin-left: 10px;
+  transition: 0.5s;
+}
+.productChoiceHeader:hover {
+  background: rgba(160, 160, 103, 0.1);
+  transition: 0.5s;
 }
 
 .productChoice {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  background: rgba(250, 250, 210, 0.66);
   padding: 5px;
   margin: 5px;
+  border-radius: 4px;
   cursor: pointer;
+}
+.productChoice:hover {
+  background: rgba(250, 250, 210, 0.85);
 }
 
 /* Styling consistent to every widget */
@@ -64,10 +92,16 @@ letter-spacing: "0em";
   font-family: 'Roboto', sans-serif;
   width: 100%;
   max-width: 1200px;
-  border: 2px solid #333;
+  margin-bottom: 24px;
+  /* border: 2px solid #333; */
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
   border-radius: 4px;
   padding: 3px;
-  background-image: url("./img/y-so-serious-white.png");
+  /* background-image: url("./img/y-so-serious-white.png"); */
+  background-image: url('./nanas2.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
@@ -85,27 +119,39 @@ button:hover {
 #overviewWrapper {
   padding: 1rem;
   display: flex;
+  background: rgba(255,255,255,0.66);
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
   flex-direction: column;
+  transition: 0.5s;
+}
+#overviewWrapper:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transition: 0.5s;
+
 }
 
 /* Add to Cart */
 #sizeDropdown {
   position: absolute;
-  background-color: white;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.5);
   width: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
 }
 
 #sizeButton {
   width: 200px;
   height: 25px;
-  background-color: white;
-  border: 1px solid black;
+  background: rgba(200, 200, 200, 0.33);
+  border-radius: 4px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 6px 6px -3px rgba(250,250,210,0.2),0px 10px 14px 1px rgba(250,250,210,0.14),0px 4px 18px 3px rgba(250,250,210,0.12);
   transition: 0.3212s;
 }
 
 #sizeButton:hover {
-  background-color: rgba(0, 0, 0, 0.34);
+  background: rgba(200, 200, 200, 0.85);
   transition: 0.3212s;
 }
 
@@ -139,15 +185,16 @@ button:hover {
 #addToCartButton {
   width: 200px;
   height: 50px;
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 25px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 6px 6px -3px rgba(250,250,210,0.2),0px 10px 14px 1px rgba(250,250,210,0.14),0px 4px 18px 3px rgba(250,250,210,0.12);
+  background: rgba(200, 200, 200, 0.34);
+  border-radius: 24px;
   font-size: 15px;
   transition: 0.3212s;
 }
 
 #addToCartButton:hover {
-  background-color: rgba(0, 0, 0, 0.34);
+  background: rgba(200, 200, 200, 0.85);
   transition: 0.3212s;
 }
 
@@ -193,7 +240,8 @@ button:hover {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
 }
 
 #styleName {
@@ -260,10 +308,17 @@ img.styleThumbnail {
 }
 
 #descriptionWrapper {
+  background: rgba(255,255,255,0.66);
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
   display: flex;
   padding: 10px;
   margin: 5px;
   width: 75%;
+  transition: 0.5s;
+}
+#descriptionWrapper:hover {
+  background: rgba(255,255,255,0.85);
+  transition: 0.5s;
 }
 
 #description {
@@ -332,7 +387,8 @@ img.image {
   height: 30px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #ddd;
+  box-shadow: 0px 3px 5px -1px rgba(222,222,222,.2),0px 5px 8px 0px rgba(222,222,222,0.14),0px 1px 14px 0px rgba(222,222,222,0.12);
+  /* border: 1px solid #ddd; */
 }
 
 .leftArrow {
@@ -373,7 +429,8 @@ img.image {
   height: 20px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  box-shadow: 0px 3px 5px -1px rgba(222,222,222,.2),0px 5px 8px 0px rgba(222,222,222,0.14),0px 1px 14px 0px rgba(222,222,222,0.12);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,7 +494,8 @@ img.thumbnail:hover {
 /* Styling for Related and Outfit */
 
 #default_image {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
   height: 150px;
   width: 150px;
 }
@@ -463,9 +521,10 @@ img.thumbnail:hover {
 }
 
 #comparisonModal {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
   background: rgb(238, 235, 235);
-  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  /* box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12); */
   height: 400px;
   width: 400px;
   position: absolute;
@@ -496,7 +555,11 @@ img.thumbnail:hover {
 }
 
 #outfitContainer {
-  background-image: url("./img/y-so-serious-white.png");
+  /* background-image: url("./img/y-so-serious-white.png"); */
+  background-image: url('./nanas2.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -505,7 +568,11 @@ img.thumbnail:hover {
 }
 
 #productCardContainer {
- background-image: url("./img/y-so-serious-white.png");
+ /* background-image: url("./img/y-so-serious-white.png"); */
+ background-image: url('./nanas2.png');
+ background-repeat: repeat;
+ background-attachment: fixed;
+ background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -530,6 +597,7 @@ img.thumbnail:hover {
 /* Styling for Ratings/Reviews */
 
 #ratingsAndReviewsContainer {
+  border-radius: 4px;
   padding: 5px;
   display: flex;
   justify-content: space-around;
@@ -543,20 +611,47 @@ img.thumbnail:hover {
   gap: 16px;
 }
 #ratingSummary {
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.66);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  transition: 0.5s;
+}
+#ratingSummary:hover {
+  background-color: rgba(255,255,255,0.85);
+  transition:0.5s;
 }
 #ratingSummary h3 {
   font-size: 25px;
   text-align: center;
   margin-left: 10px;
 }
+#recommendedBy {
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.85);
+  color: #767676;
+  transition: 0.5s;
+}
+#recommendedBy strong {
+  color: #333;
+}
+#recommendedBy:hover {
+  color: #333;
+  background-color: rgba(255,255,255,0.85);
+  transition: 0.5s;
+}
 #ratingBreakdown {
   max-width: 100%;
-  background: rgba(200, 200, 200, 0.3);
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.66);
   box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  transition: 0.5s;
+}
+#ratingBreakdown:hover {
+  background-color: rgba(255,255,255,0.85);
+  transition: 0.5s;
 }
 #ratingBar {
   height: 10px;
@@ -576,12 +671,18 @@ img.thumbnail:hover {
 
 #productBreakdown {
   width: 100%;
-  background: rgba(200,200,200,0.3);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.66);
   box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
   font-size: 20px;
   font-variant: small-caps;
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
+}
+#producBreakdown:hover {
+  background: rgba(255,255,255,0.85);
+  transition: 0.5s;
 }
 
 #productBreakdown .ReviewBar{
@@ -638,6 +739,13 @@ img.thumbnail:hover {
 }
 #reviews #sortBar {
   flex-direction: row;
+  background: rgba(255,255,255,0.66);
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  transition: 0.5s;
+}
+#reviews #sortBar:hover {
+  background: rgba(255,255,255,0.85);
+  transition: 0.5s;
 }
 
 #reviewList {
@@ -650,16 +758,18 @@ img.thumbnail:hover {
   justify-content: center;
 }
 .addReview {
-  width: 160px;
-  height: 24px;
-  background-color: rgba(200,200,200,0.66);
-  border-radius: 4px;
-  font-size: 12px;
-  transition: 0.5s;
+  width: 200px;
+  height: 50px;
+  color: #deedee;
+  font-size: 24px;
+  font-weight: 300;
+  background: rgba(200, 200, 200, 0.85);
+  border-radius: 24px;
+  box-shadow: 0px 6px 6px -3px rgba(250,250,210,0.2),0px 10px 14px 1px rgba(250,250,210,0.14),0px 4px 18px 3px rgba(250,250,210,0.12);
+  transition: 0.3212s;
 }
 .addReview:hover {
-  background-color: rgba(215, 185, 75, 0.33);
-  box-shadow: 0px 3px 5px -1px rgba(215, 185, 75,0.2),0px 6px 10px 0px rgba(215, 185, 75,0.14),0px 1px 18px 0px rgba(215, 185, 75,0.12);
+  background-color: rgba(215, 185, 75, 0.95);
   transition: 0.5s;
 }
 
@@ -678,13 +788,13 @@ img.thumbnail:hover {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255,255,255,0.25);
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  background-color: rgba(255,255,255,0.66);
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.66),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
   transition: 0.2s;
 }
 #review:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.85);
   transition: 0.2s;
 }
 
@@ -727,6 +837,10 @@ img.thumbnail:hover {
   text-decoration: underline;
   font-size: 1.5em;
   transition: 0.33s;
+}
+#reportReview {
+  border-radius: 25%;
+  transition:  00.5s;
 }
 #reportReview:hover {
   cursor: pointer;

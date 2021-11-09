@@ -75,7 +75,7 @@ const ReviewForm = () => {
           </div>
         </div>
 
-        <div className="formElement characteristics">
+        {/* <div className="formElement characteristics">
           <h3>Product Characteristics: </h3>
 
           {characteristicNames.map((characteristic) => (
@@ -92,7 +92,7 @@ const ReviewForm = () => {
               ))}
             </span>
           ))}
-        </div>
+        </div> */}
 
         <div className="formElement reviewInput">
           <h3>Review Summary: </h3>

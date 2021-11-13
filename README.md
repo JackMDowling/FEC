@@ -50,7 +50,7 @@ _**Da Island Bois**_, established November 2021, jumped into this project with t
 
 * Product description and specifications.
 
-<img src="./client/dist/img/overview.png" width="90%">
+<img src="./client/dist/img/overviewPhoto.png" width="90%">
 
 
 **Expanded View**:

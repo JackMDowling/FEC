@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "pack": "webpack --config ./webpack.config.js --mode development -w",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "server": "nodemon server/index.js"
   },
   "repository": {
@@ -35,7 +36,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dynamic-carousel": "^1.0.7",
-    "react-share": "^4.4.0"
+    "react-share": "^4.4.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
